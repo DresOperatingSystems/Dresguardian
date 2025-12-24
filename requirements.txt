@@ -1,0 +1,4 @@
+python-telegram-bot
+cerebras-cloud-sdk
+aiohttp
+python-dotenv
