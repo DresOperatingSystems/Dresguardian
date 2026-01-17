@@ -92,33 +92,64 @@ DresGuardian combines advanced group moderation with a privacy respecting AI ass
 
 # Setup Instructions
 
-1. Clone the repo     
-   sudo apt update && sudo apt full-uprgrade -y     
-   sudo apt install git     
-   sudo apt install python3     
-   git clone https://<i></i>github.com/DresOperatingSystems/Dresguardian    
-   cd Dresguardian
+1. Clone the repo
+```bash   
+sudo apt update && sudo apt full-uprgrade -y
+```
+```bash 
+sudo apt install git
+```
+```bash
+sudo apt install python3
+```
+```bash
+git clone https://github.com/DresOperatingSystems/Dresguardian
+```
+```bash
+cd Dresguardian
+```
                   
-3. create a venv (this is for self hosting and so we dont run into issues)        
-   sudo apt update        
-   sudo apt install python3-venv       
-   python3 -m venv .venv && source .venv/bin/activate      
+3. create a venv (this is for self hosting and so we dont run into issues)
+```bash
+sudo apt update
+```
+```bash
+sudo apt install python3-venv
+```
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+```    
    
-4. pip install -r requirements.txt      
+5. after install the dependencies
+```bash
+pip install -r requirements.txt
+``` 
 
-5. sudo apt install nano      
-   cp .env-sample .env      
-   nano .env    
-   input your variables     
+7. set up tbe .env file
+ ```bash
+sudo apt install nano
+```
+```bash
+cp .env-sample .env
+```
+```bash
+nano .env
+```
+input your variables     
    
-6. self host    
-   sudo apt install nohup    
-   nohup python dresguardian.py &   
-   deactivate    
-   exit    
-   
- now your bot is being self hosted for extra backend security install and start tor along with setting up mac randomization and run your machine through a vpn/proxy service
+9. self host   
+```bash
+sudo apt install nohup
+```
+```bash   
+nohup python dresguardian.py &
+```   
+```bash
+deactivate
+```
+```bash  
+exit
+```
+now your bot is being self hosted for extra backend security install and start tor along with setting up mac randomization and run your machine through a vpn/proxy service
 
 anyways we hope you like this one and we wish you a merry christmas from the entire Dres team
-
-this is an upgrade to our dresmodbot and please retheme everything to your style if you use Dres style then you have to give credit otherwise you're a skid
